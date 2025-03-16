@@ -1,0 +1,59 @@
+/* src/components/Graph.css */
+.graph {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+}
+
+.node {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.node.start {
+  background-color: green;
+}
+
+.node.end {
+  background-color: red;
+}
+
+.node.general {
+  background-color: lightblue;
+}
+
+.node.node-visited {
+  background-color: yellow;
+}
+
+.node.node-shortest-path {
+  background-color: blue;
+}
+
+.edge {
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background-color: lightgray;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.edge.hovered {
+  background-color: orange;
+}
+
+.heuristic {
+  font-size: 12px;
+  color: darkblue;
+}
